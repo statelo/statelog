@@ -12,6 +12,10 @@ class Home extends Component {
             web-programmer.
           </span>
         </p>
+        <h1>
+            OMG! Today is 15th January of 2017 and I finally deployed
+            my first application! It 6:30 AM!!!! So tired, but HAPPY!!
+        </h1>
       </div>
     );
   }
