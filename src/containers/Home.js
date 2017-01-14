@@ -13,10 +13,10 @@ class Home extends Component {
           </span>
         </p>
         <p>
-            <span>
-              OMG! Today is 15th January of 2017 and I finally deployed
-              my first application! It 6:30 AM!!!! So tired, but HAPPY!!
-            </span>
+          <span>
+            OMG! Today is 15th January of 2017 and I finally deployed
+            my first application! It 6:30 AM!!!! So tired, but HAPPY!!
+          </span>
         </p>
       </div>
     );
