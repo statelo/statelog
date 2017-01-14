@@ -1,0 +1,44 @@
+header {
+  background-color: #0F1626;
+  height: 450px;
+  color: #3CC47C;
+}
+
+nav {
+  text-align: left;
+  padding: 20px;
+}
+
+.navlink-left {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #3CC47C;
+}
+
+.navlink-right {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  color: #3CC47C;
+  float: right;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 100px 0 0 0;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 0.1em;
+}
+
+.main {
+  border: solid 10px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+}
