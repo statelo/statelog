@@ -8,7 +8,7 @@ module.exports = {
     // First application
     {
       name      : "API",
-      script    : "app.js",
+      script    : "./server/src/app.js",
       env_production : {
         NODE_ENV: "production"
       }
