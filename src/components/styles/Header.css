@@ -46,13 +46,13 @@ h1 {
 @media screen and (max-width: 375px) {
   header {
     background-color: #0F1626;
-    height: 400px;
+    height: 440px;
     color: #3CC47C;
   }
 
   nav {
     text-align: left;
-    padding: 15px;
+    padding: 13px;
   }
 
   h1 {
@@ -64,15 +64,53 @@ h1 {
 
   .navlink-left {
     display: inline-block;
-    padding: 0 4px 0 4px;
+    padding: 0 7px 0 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    font-size: 15px;
     color: #3CC47C;
   }
 
   .navlink-right {
     display: inline-block;
-    padding: 0 3px 0 3px;
+    padding: 0 0 0 3px;
+    color: #3CC47C;
+    font-size: 15px;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    background-color: #0F1626;
+    height: 400px;
+    color: #3CC47C;
+  }
+
+  nav {
+    text-align: left;
+    padding: 12px;
+  }
+
+  h1 {
+    margin: 100px 0 0 0;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+  }
+
+  .navlink-left {
+    display: inline-block;
+    padding: 0 5px 0 0px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #3CC47C;
+  }
+
+  .navlink-right {
+    display: inline-block;
+    padding: 2px 0px 0 3px;
+    font-size: 13px;
     color: #3CC47C;
     float: right;
   }
