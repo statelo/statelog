@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/Tutorials.scss';
 
 class Tutorials extends React.Component {
   render() {
