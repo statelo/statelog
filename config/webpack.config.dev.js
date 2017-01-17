@@ -151,7 +151,6 @@ module.exports = {
       // SASS pre-processor
       {
         test: /\.scss$/,
-        include: paths.appSrc,
         loaders: ['style', 'css', 'sass']
       },
       // "file" loader for svg
