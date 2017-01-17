@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/Header.scss';
+import { Link } from 'react-router';
 
 class Header extends Component {
   constructor(props) {
@@ -9,8 +10,7 @@ class Header extends Component {
       title: "STATELO`S BLOG",
       menu1: "HOME",
       menu2: "TUTORIALS",
-      menu3: "HOHO",
-      menu4: "XDXD",
+      menu4: "AWESOME",
       about: "ABOUT ME"
     };
   }
@@ -20,12 +20,11 @@ class Header extends Component {
       <div>
         <header>
           <nav>
-            <a href="#" className="navlink-left">{ this.state.menu1 }</a>
-            <a href="#" className="navlink-left">{ this.state.menu2 }</a>
-            <a href="#" className="navlink-left">{ this.state.menu3 }</a>
-            <a href="/api/friends/nala" className="navlink-left">{ this.state.menu4 }</a>
+            <Link to="/" className="navlink-left">{ this.state.menu1 }</Link>
+            <Link to="/tutorials" className="navlink-left">{ this.state.menu2 }</Link>
+            <Link href="/api/friends/nala" className="navlink-left">{ this.state.menu4 }</Link>
 
-            <a href="/" className="navlink-right">{ this.state.about }</a>
+            <Link to="/about" className="navlink-right">{ this.state.about }</Link>
           </nav>
 
           <h1><span className="main">{ this.state.title }</span></h1>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import Home from './Home';
+import { Header } from '../components/index';
 import './styles/App.css';
 
 class App extends Component {
@@ -8,7 +7,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Home />
+
+        { this.props.children }
       </div>
     );
   }
