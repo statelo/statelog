@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Lemon);
+
+.comment {
+  margin: 50px 500px 0 500px;
+}
+
+textarea {
+  width: 99.4%;
+  margin: auto;
+}
+
+button {
+  float: right;
+  position: relative;
+  padding: 15px;
+  border: 2px solid #0F1626;
+  border-radius: 5px;
+  background-color: #0F1626;
+  color: #3CC47C;
+  font-family: 'Lemon', cursive;
+  &:hover {
+    color: white;
+  }
+}

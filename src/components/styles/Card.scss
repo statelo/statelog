@@ -1,0 +1,37 @@
+.card {
+  margin: 30px 0 0 50px;
+  width: 270px;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  float: left;
+  display: inline-block;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.more {
+  text-decoration: none;
+  color: blue;
+  float: right;
+}
+
+.footer {
+  font-size: 15px;
+}
+
+.more:hover {
+  color: #3CC47C;
+}
+
+p {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}

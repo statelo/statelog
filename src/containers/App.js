@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import { Header } from '../components/index';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as actionCreators from '../actions/index';
+import Main from './Main';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-
-        { this.props.children }
-      </div>
-    );
+function mapStateToProps(state) {
+  return {
+    comments: state.comments
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+const App = connect(mapStateToProps, mapDispatchToProps)(Main);
 
 export default App;
