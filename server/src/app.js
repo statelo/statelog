@@ -5,7 +5,7 @@ import historyApiFallback from 'connect-history-api-fallback';
 
 const app = express();
 
-const PORT = 4000;
+const PORT = 3001;
 
 app.use('/api', api);
 
