@@ -24,7 +24,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var app = (0, _express2.default)();
 
-var PORT = 3001;
+var PORT = 4000;
 
 app.use('/api', _routes2.default);
 
