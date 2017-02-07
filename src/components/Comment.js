@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/Comment.scss';
+import { Text } from './index'
 
 class Comment extends React.Component {
   constructor(props) {
@@ -38,9 +39,9 @@ class Comment extends React.Component {
           <button onClick={this.handleAddCommentText}>POST</button>
         </div>
         {this.props.comments.text.map((text, i) =>
-          <p key={i}>
+          <Text key={i}>
             {text.text}
-          </p>
+          </Text>
         )}
       </div>
     );
