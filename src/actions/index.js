@@ -1,12 +1,5 @@
 import axios from 'axios';
 
-export const addIrina = (sister) => {
-  return {
-    type: 'ADD_SISTER',
-    sister
-  };
-}
-
 export const commentSuccess = (text) => {
   return {
     type: 'GET_COMMENT',
@@ -23,9 +16,18 @@ export const commentGetRequest = () => {
   }
 }
 
-export const addCommentText = (text) => {
+export const commentPostRequest = (text) => {
   return (dispatch) => {
     return axios.post('/api/comments', { text })
+      .then(response => {
+        return JSON.stringify(response.data)
+      })
+  }
+}
+
+export const deletePostRequest = () => {
+  return (dispatch) => {
+    return axios.delete('/api/comments')
       .then(response => {
         return JSON.stringify(response.data)
       })

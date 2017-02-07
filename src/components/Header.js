@@ -22,7 +22,7 @@ class Header extends Component {
           <nav>
             <Link to="/" className="navlink-left">{ this.state.menu1 }</Link>
             <Link to="/tutorials" className="navlink-left">{ this.state.menu2 }</Link>
-            <Link href="/api/friends/nala" className="navlink-left">{ this.state.menu4 }</Link>
+            <Link href="#" className="navlink-left">{ this.state.menu4 }</Link>
 
             <Link to="/about" className="navlink-right">{ this.state.about }</Link>
           </nav>

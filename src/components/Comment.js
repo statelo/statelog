@@ -9,7 +9,8 @@ class Comment extends React.Component {
       text: ''
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleAddCommentText = this.handleAddCommentText.bind(this);
+    this.handlePostComment = this.handlePostComment.bind(this);
+    this.handleDeleteComment = this.handleDeleteComment.bind(this);
   }
 
   componentDidMount() {
@@ -22,9 +23,14 @@ class Comment extends React.Component {
     });
   }
 
-  handleAddCommentText() {
+  handlePostComment() {
     let text = this.state.text;
-    this.props.addCommentText(text);
+    this.props.commentPostRequest(text);
+    this.props.commentGetRequest();
+  }
+
+  handleDeleteComment() {
+    this.props.deletePostRequest();
     this.props.commentGetRequest();
   }
 
@@ -35,8 +41,8 @@ class Comment extends React.Component {
           <input
             onChange={this.handleChange}>
           </input>
-          <button>DELETE</button>
-          <button onClick={this.handleAddCommentText}>POST</button>
+          <button onClick={this.handleDeleteComment}>DELETE</button>
+          <button onClick={this.handlePostComment}>POST</button>
         </div>
         {this.props.comments.text.map((text, i) =>
           <Text key={i}>
