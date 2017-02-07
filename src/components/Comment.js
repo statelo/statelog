@@ -31,9 +31,10 @@ class Comment extends React.Component {
     return(
       <div className="comment">
         <div className="form">
-          <textarea
+          <input
             onChange={this.handleChange}>
-          </textarea>
+          </input>
+          <button>DELETE</button>
           <button onClick={this.handleAddCommentText}>POST</button>
         </div>
         {this.props.comments.text.map((text, i) =>

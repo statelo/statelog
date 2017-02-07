@@ -8,11 +8,14 @@
   margin-bottom: 100px;
 }
 
-textarea {
+input {
   width: 99.4%;
+  padding: 0 0 100px 0
 }
 
 button {
+  margin-top: 10px;
+  margin-left: 5px;
   float: right;
   position: relative;
   padding: 15px;
@@ -23,5 +26,20 @@ button {
   font-family: 'Lemon', cursive;
   &:hover {
     color: white;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .comment {
+    margin: 25px 25px 0 25px;
+  }
+
+  input {
+    width: 99%;
+    padding: 0 0 50px 0
+  }
+
+  button {
+    padding: 10px;
   }
 }
