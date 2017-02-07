@@ -35,3 +35,9 @@ p {
 .inline {
   display: inline;
 }
+
+@media screen and (max-width: 375px) {
+  .card {
+    margin: 30px 25px 30px 30px;
+  }
+}
