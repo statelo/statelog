@@ -1,7 +1,7 @@
 import express from 'express';
-import friends from './friends';
+import comments from './comments';
 
 const router = express.Router();
-router.use('/friends', friends);
+router.use('/comments', comments);
 
 export default router;

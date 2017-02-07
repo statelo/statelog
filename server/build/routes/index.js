@@ -8,13 +8,13 @@ var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
 
-var _friends = require('./friends');
+var _comments = require('./comments');
 
-var _friends2 = _interopRequireDefault(_friends);
+var _comments2 = _interopRequireDefault(_comments);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var router = _express2.default.Router();
-router.use('/friends', _friends2.default);
+router.use('/comments', _comments2.default);
 
 exports.default = router;

@@ -20,11 +20,30 @@ var _connectHistoryApiFallback = require('connect-history-api-fallback');
 
 var _connectHistoryApiFallback2 = _interopRequireDefault(_connectHistoryApiFallback);
 
+var _bodyParser = require('body-parser');
+
+var _bodyParser2 = _interopRequireDefault(_bodyParser);
+
+var _mongoose = require('mongoose');
+
+var _mongoose2 = _interopRequireDefault(_mongoose);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_mongoose2.default.Promise = global.Promise;
+
+_mongoose2.default.connect('mongodb://localhost/test');
+var db = _mongoose2.default.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+  console.log('Connected to mongodb');
+});
 
 var app = (0, _express2.default)();
 
 var PORT = 3001;
+
+app.use(_bodyParser2.default.json());
 
 app.use('/api', _routes2.default);
 

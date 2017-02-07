@@ -1,37 +1,46 @@
 import React from 'react';
 import './styles/Comment.scss';
-import { addComment } from '../actions';
-import { store } from '../index';
 
 class Comment extends React.Component {
-  render() {
-    let input;
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ''
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleAddCommentText = this.handleAddCommentText.bind(this);
+  }
 
+  componentDidMount() {
+    this.props.commentGetRequest()
+  }
+
+  handleChange(e) {
+    this.setState({
+      text: e.target.value
+    });
+  }
+
+  handleAddCommentText() {
+    let text = this.state.text;
+    this.props.addCommentText(text);
+    this.props.commentGetRequest();
+  }
+
+  render() {
     return(
       <div className="comment">
-        {this.props.comments.map((comment, i) =>
+        <div className="form">
+          <textarea
+            onChange={this.handleChange}>
+          </textarea>
+          <button onClick={this.handleAddCommentText}>POST</button>
+        </div>
+        {this.props.comments.text.map((text, i) =>
           <p key={i}>
-            {comment.text}
+            {text.text}
           </p>
         )}
-
-        <form onSubmit={e => {
-          e.preventDefault();
-        }}>
-          <textarea
-            rows="4"
-            ref={node => { input = node }}></textarea>
-          <button
-            type="submit"
-            onClick={() => {
-              store.dispatch(
-                addComment(input.value)
-              )
-              input.value = ''
-            }}>
-            ADD COMMENT
-          </button>
-        </form>
       </div>
     );
   }

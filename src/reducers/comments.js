@@ -1,11 +1,14 @@
-const comments = (state = [], action) => {
+const initialState = {
+  text: []
+}
+
+const comments = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD_COMMENT':
-      return [
-        ...state, {
-          text: action.text
-        }
-      ]
+    case 'GET_COMMENT':
+      return {
+        ...state,
+        text: action.text
+      }
     default:
       return state;
   }

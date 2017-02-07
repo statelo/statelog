@@ -5,21 +5,13 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import './index.css';
 import { App, Home, About, Tutorials, First } from './containers/index';
 
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 import rootReducer from './reducers/index';
 
-import { loadState, saveState } from './localStorage'
-
-const persistedState = loadState()
-export const store = createStore(rootReducer, persistedState);
-
-store.subscribe(() => {
-  saveState({
-    comments: store.getState().comments
-  });
-});
+export const store = createStore(rootReducer, applyMiddleware(thunk));
 
 const history = syncHistoryWithStore(browserHistory, store);
 
