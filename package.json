@@ -35,7 +35,6 @@
     "jest": "17.0.2",
     "json-loader": "0.5.4",
     "node-sass": "^4.3.0",
-    "nodemon": "^1.11.0",
     "object-assign": "4.1.0",
     "path-exists": "2.1.0",
     "pm2": "^2.2.3",
@@ -54,8 +53,6 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
-    "body-parser": "^1.16.0",
-    "mongoose": "^4.8.1",
     "morgan": "^1.7.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
