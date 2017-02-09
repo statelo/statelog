@@ -1,11 +1,19 @@
 .card {
-  margin: 30px 0 0 50px;
-  width: 270px;
-  border: 5px solid black;
-  border-radius: 5px;
-  padding: 20px;
-  float: left;
+  width: 18%;
+  padding: 20px 1% 20px 1%;
   display: inline-block;
+  float: left;
+  background-color: #b5b5b7;
+  color: #252839;
+}
+
+.card-button {
+  background-color: #b5b5b7;
+  color: #252839;
+  &:hover {
+    border-color: white;
+    color: white;
+  }
 }
 
 .header {
@@ -16,7 +24,6 @@
 
 .more {
   text-decoration: none;
-  color: blue;
   float: right;
 }
 
@@ -38,6 +45,7 @@ p {
 
 @media screen and (max-width: 375px) {
   .card {
-    margin: 30px 25px 30px 30px;
+    width: 90%;
+    padding: 20px 5% 20px 5%;
   }
 }

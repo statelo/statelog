@@ -1,8 +1,8 @@
 import React from 'react';
-import './styles/Card.scss';
+import './styles/CardFirstDeployment.scss';
 import { Link } from 'react-router';
 
-class Card extends React.Component {
+class CardFirstDeployment extends React.Component {
   render() {
     return (
       <div>
@@ -17,11 +17,11 @@ class Card extends React.Component {
           </p>
 
           <p className="footer">05.01.2017</p>
-          <Link to="/first-deployment" className="more">Read More</Link>
+          <Link to="/first-deployment" className="more"><button className="card-button">Read More</button></Link>
         </div>
       </div>
     );
   }
 }
 
-export default Card;
+export default CardFirstDeployment;

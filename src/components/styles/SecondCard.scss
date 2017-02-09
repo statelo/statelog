@@ -1,0 +1,52 @@
+.second-card {
+  width: 18%;
+  padding: 20px 1% 20px 1%;
+  display: inline-block;
+  float: left;
+  background-color: #312c32;
+  color: #3fb0ac;
+}
+
+.second-card-button {
+  background-color: #312c32;
+  color: #3fb0ac;
+  border-color: #3fb0ac;
+  &:hover {
+    border-color: white;
+    color: white;
+  }
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.more {
+  text-decoration: none;
+  float: right;
+}
+
+.footer {
+  font-size: 15px;
+}
+
+.more:hover {
+  color: #3CC47C;
+}
+
+p {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+@media screen and (max-width: 375px) {
+  .second-card {
+    width: 90%;
+    padding: 20px 5% 20px 5%;
+  }
+}

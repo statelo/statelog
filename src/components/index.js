@@ -1,6 +1,7 @@
 import Header from './Header';
-import Card from './Card';
+import CardFirstDeployment from './CardFirstDeployment';
+import SecondCard from './SecondCard';
 import Comment from './Comment';
 import Text from './Text';
 
-export { Header, Card, Comment, Text };
+export { Header, CardFirstDeployment, Comment, Text, SecondCard };
