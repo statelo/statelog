@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 import './index.css';
-import { App, Home, About, Tutorials, First } from './containers/index';
+import { App, Home, About, Tutorials, Blogs } from './containers/index';
 
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
@@ -20,9 +20,9 @@ ReactDOM.render(
     <Router history={ history }>
       <Route path="/" component={ App }>
         <IndexRoute component={ Home } />
+        <Route path="/blogs" component={ Blogs }></Route>
         <Route path="/tutorials" component={ Tutorials } />
         <Route path="/about" component={ About } />
-        <Route path="/first-deployment" component={ First } />
       </Route>
     </Router>
   </Provider>,

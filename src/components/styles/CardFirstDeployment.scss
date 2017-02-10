@@ -43,9 +43,34 @@ p {
   display: inline;
 }
 
+@media screen and (max-width: 667px) {
+  .card {
+    width: 90%;
+    height: 175px;
+    padding: 100px 5% 100px 5%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .card {
+    width: 90%;
+    height: 200px;
+    padding: 60px 5% 60px 5%;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .card {
     width: 90%;
+    height: 243.5px;
+    padding: 45px 5% 45px 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 90%;
+    height: 244px;
     padding: 20px 5% 20px 5%;
   }
 }

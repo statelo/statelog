@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { CardFirstDeployment, SecondCard } from '../components/index';
+import { Comment } from '../components/index';
+import './styles/Home.scss';
 
 class Home extends Component {
   render() {
     return(
       <div>
-        <CardFirstDeployment/>
-        <SecondCard/>
+        <h1 className="wishes">Leave some wishes</h1>
+        <Comment {...this.props} />
       </div>
     );
   }

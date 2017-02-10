@@ -10,7 +10,7 @@ class Header extends Component {
       title: "STATELO`S BLOG",
       menu1: "HOME",
       menu2: "TUTORIALS",
-      menu4: "AWESOME",
+      menu3: "BLOGS",
       about: "ABOUT ME"
     };
   }
@@ -21,9 +21,8 @@ class Header extends Component {
         <header>
           <nav>
             <Link to="/" className="navlink-left">{ this.state.menu1 }</Link>
+            <Link to="/blogs" className="navlink-left">{ this.state.menu3 }</Link>
             <Link to="/tutorials" className="navlink-left">{ this.state.menu2 }</Link>
-            <Link href="#" className="navlink-left">{ this.state.menu4 }</Link>
-
             <Link to="/about" className="navlink-right">{ this.state.about }</Link>
           </nav>
 
