@@ -14,6 +14,7 @@ class RegistrationForm extends React.Component {
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   onChange(e) {
@@ -48,13 +49,40 @@ class RegistrationForm extends React.Component {
     }
   }
 
+  closeModal() {
+    let close = document.getElementById("closeModal");
+    let modal = document.getElementById("signupModal");
+
+    close.onclick = () => {
+      modal.style.display = "none";
+    }
+
+    window.onclick = (event) => {
+      if (event.target === modal) {
+          modal.style.display = "none";
+      }
+    }
+  }
+
+  componentDidMount() {
+    this.closeModal();
+  }
+
   render() {
     const { errors } = this.state;
 
     return(
-      <div className="register">
+      <div className="modal-content">
+        <span
+          id="closeModal"
+          className="close"
+          onClick={this.closeModal}
+        >
+          &times;
+        </span>
+
         <form onSubmit={this.onSubmit}>
-          <h1>SIGN UP</h1>
+          <h1 className="signup-header">SIGN UP</h1>
 
           <TextFieldGroup
             error={errors.username}

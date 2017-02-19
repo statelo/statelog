@@ -12,8 +12,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _mongoose2.default.Promise = global.Promise;
 
-var commentSchema = _mongoose2.default.Schema({
+var Comment = _mongoose2.default.Schema({
   text: String
 });
 
-exports.default = _mongoose2.default.model('Comment', commentSchema);
+exports.default = _mongoose2.default.model('Comment', Comment);

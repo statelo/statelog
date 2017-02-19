@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lemon);
 
-body {
+body, html {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Lemon', cursive;

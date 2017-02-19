@@ -15,6 +15,21 @@ class Header extends Component {
       signup: "SIGN UP",
       login: "LOGIN"
     };
+
+    this.popupModal = this.popupModal.bind(this);
+  }
+
+  popupModal() {
+    let modal = document.getElementById("signupModal");
+    let signup = document.getElementById("signupLink");
+
+    signup.onclick = () => {
+      modal.style.display = "block";
+    }
+  }
+
+  componentDidMount() {
+    this.popupModal();
   }
 
   render() {
@@ -27,8 +42,20 @@ class Header extends Component {
             <Link to="/tutorials" className="navlink-left">{ this.state.menu2 }</Link>
             <Link to="/about" className="navlink-left">{ this.state.about }</Link>
 
-            <Link to="/signup" className="navlink-right">{ this.state.signup }</Link>
-            <Link to="/login" className="navlink-right">{ this.state.login }</Link>
+            <Link
+              to="/signup"
+              className="navlink-right"
+              id="signupLink"
+              onClick={this.popupModal}
+            >
+              { this.state.signup }
+            </Link>
+            <Link
+              to="/login"
+              className="navlink-right"
+            >
+              { this.state.login }
+            </Link>
           </nav>
 
           <h1><span className="main">{ this.state.title }</span></h1>
