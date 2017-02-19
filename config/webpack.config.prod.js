@@ -132,7 +132,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         include: [
           paths.appSrc,
-          path.join(__dirname, '../server/shared')
+          path.join(__dirname, '../server/src/shared')
         ],
         loader: 'babel',
 

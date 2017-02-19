@@ -1,7 +1,7 @@
 import express from 'express';
 import Account from '../models/account';
 import passport from 'passport';
-import validateInput from '../../shared/validations/signup';
+import validateInput from '../shared/validations/signup';
 
 const router = express.Router();
 
@@ -14,7 +14,6 @@ router.post('/', (req, res) => {
           throw err;
       }
 
-      console.log(account);
       passport.authenticate('local')(req, res, () => {
         res.json({ success: true });
       });

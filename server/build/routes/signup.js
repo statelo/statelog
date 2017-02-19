@@ -16,7 +16,7 @@ var _passport = require('passport');
 
 var _passport2 = _interopRequireDefault(_passport);
 
-var _signup = require('../../shared/validations/signup');
+var _signup = require('../shared/validations/signup');
 
 var _signup2 = _interopRequireDefault(_signup);
 
@@ -35,7 +35,6 @@ router.post('/', function (req, res) {
         throw err;
       }
 
-      console.log(account);
       _passport2.default.authenticate('local')(req, res, function () {
         res.json({ success: true });
       });

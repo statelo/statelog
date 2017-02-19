@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/RegistrationForm.scss';
-import validateInput from '../../server/shared/validations/signup';
+import validateInput from '../../server/src/shared/validations/signup';
 import TextFieldGroup from '../components/common/TextFieldGroup';
 
 class RegistrationForm extends React.Component {
