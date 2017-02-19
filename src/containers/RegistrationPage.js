@@ -6,11 +6,25 @@ import { addFlashMessage } from '../actions/flashMessages';
 import './styles/RegistrationPage.scss';
 
 class RegistrationPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      renderChild: true
+    }
+    this.handleChildUnmount = this.handleChildUnmount.bind(this);
+  }
+
+  handleChildUnmount() {
+    this.setState({
+      renderChild: false
+    })
+  }
+
   render() {
     const { signupPostRequest, addFlashMessage } = this.props
     return(
-      <div className="modal" id="signupModal">
-        <RegistrationForm signupPostRequest={ signupPostRequest } addFlashMessage={ addFlashMessage } />
+      <div className="modal">
+        {this.state.renderChild ? <RegistrationForm unmountMe={this.handleChildUnmount} signupPostRequest={ signupPostRequest } addFlashMessage={ addFlashMessage } /> : null}
       </div>
     )
   }

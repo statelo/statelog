@@ -14,7 +14,7 @@ class RegistrationForm extends React.Component {
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-    this.closeModal = this.closeModal.bind(this);
+    this.dismiss = this.dismiss.bind(this);
   }
 
   onChange(e) {
@@ -49,23 +49,9 @@ class RegistrationForm extends React.Component {
     }
   }
 
-  closeModal() {
-    let close = document.getElementById("closeModal");
-    let modal = document.getElementById("signupModal");
-
-    close.onclick = () => {
-      modal.style.display = "none";
-    }
-
-    window.onclick = (event) => {
-      if (event.target === modal) {
-          modal.style.display = "none";
-      }
-    }
-  }
-
-  componentDidMount() {
-    this.closeModal();
+  dismiss() {
+    this.props.unmountMe();
+    this.context.router.push('/');
   }
 
   render() {
@@ -76,7 +62,7 @@ class RegistrationForm extends React.Component {
         <span
           id="closeModal"
           className="close"
-          onClick={this.closeModal}
+          onClick={this.dismiss}
         >
           &times;
         </span>

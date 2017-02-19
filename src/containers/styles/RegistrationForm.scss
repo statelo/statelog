@@ -6,10 +6,10 @@
   border: 1px solid #888;
   width: 20%;
   height: 350px;
-  -webkit-animation-name: rightToLeftSignup;
-  -webkit-animation-duration: 0.5s;
-  animation-name: rightToLeftSignup;
-  animation-duration: 0.5s;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  animation-duration: 0.4s;
 }
 
 @-webkit-keyframes rightToLeftSignup {
@@ -20,6 +20,16 @@
 @keyframes rightToLeftSignup {
   from { right: -1250px; opacity: 0 }
   to { right: 0; opacity: 1 }
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
 }
 
 .close {
