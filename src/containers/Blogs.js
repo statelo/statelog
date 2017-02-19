@@ -7,6 +7,22 @@ class Blogs extends React.Component {
       <div>
         <CardFirstDeployment/>
         <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
+        <CardFirstDeployment/>
+        <SecondCard/>
       </div>
     );
   }

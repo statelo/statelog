@@ -1,7 +1,11 @@
 header {
-  background-color: #0F1626;
-  height: 300px;
-  color: #3CC47C;
+  background:
+    linear-gradient( rgba( 0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+    url('../../images/background-image.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #9BDDBF;
 }
 
 nav {
@@ -14,13 +18,13 @@ nav {
   padding: 0 10px 0 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #3CC47C;
+  color: #9BDDBF;
   text-decoration: none;
 }
 
 .navlink-right {
   display: inline-block;
-  color: #3CC47C;
+  color: #9BDDBF;
   text-decoration: none;
   float: right;
   padding-right: 10px;

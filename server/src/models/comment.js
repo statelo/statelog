@@ -1,8 +1,9 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
+
 mongoose.Promise = global.Promise;
 
-const commentSchema = mongoose.Schema({
+const Comment = mongoose.Schema({
   text: String
 });
 
-export default mongoose.model('Comment', commentSchema)
+export default mongoose.model('Comment', Comment);

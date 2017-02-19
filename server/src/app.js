@@ -1,13 +1,14 @@
 import express from 'express';
 import path from 'path';
 import api from './routes';
-import historyApiFallback from 'connect-history-api-fallback';
-
+import session from 'express-session';
 import bodyParser from 'body-parser';
-
 import mongoose from 'mongoose';
-mongoose.Promise = global.Promise;
+import passport from 'passport';
 
+import Account from './models/account';
+
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/test');
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -17,18 +18,29 @@ db.once('open', function() {
 
 const app = express();
 
-const PORT = 3001;
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use(bodyParser.json())
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: false
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/api', api);
 
-app.use(historyApiFallback());
-
 app.use('/', express.static(__dirname + '/../../build'));
 
-app.listen(PORT, () => {
-  console.log('App listening on port', PORT);
+const LocalStrategy = require('passport-local').Strategy;
+passport.use(new LocalStrategy(Account.authenticate()));
+passport.serializeUser(Account.serializeUser());
+passport.deserializeUser(Account.deserializeUser());
+
+app.listen(4000, () => {
+  console.log('App listening on port 4000');
 });
 
 export default app;

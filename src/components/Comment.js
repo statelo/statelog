@@ -23,14 +23,14 @@ class Comment extends React.Component {
     });
   }
 
-  handlePostComment() {
+  handlePostComment(e) {
     let text = this.state.text;
     this.props.commentPostRequest(text);
     this.props.commentGetRequest();
   }
 
   handleDeleteComment() {
-    this.props.deletePostRequest();
+    this.props.commentDeleteRequest();
     this.props.commentGetRequest();
   }
 

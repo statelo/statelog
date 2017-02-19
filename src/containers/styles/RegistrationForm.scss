@@ -1,0 +1,19 @@
+.register {
+  width: 20%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.has-error {
+  color: red;
+  input {
+    border-color: red;
+  }
+}
+
+button:disabled{
+  cursor: not-allowed;
+  background-color: gray;
+  color: black;
+}

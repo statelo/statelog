@@ -4,7 +4,7 @@ import { Header } from '../components/index';
 class Main extends Component {
   render() {
     return (
-      <div>
+      <div className="background">
         <Header />
 
         { React.cloneElement(this.props.children, this.props) }

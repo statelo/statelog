@@ -25,7 +25,7 @@ export const commentPostRequest = (text) => {
   }
 }
 
-export const deletePostRequest = () => {
+export const commentDeleteRequest = () => {
   return (dispatch) => {
     return axios.delete('/api/comments')
       .then(response => {
