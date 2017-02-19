@@ -69,8 +69,8 @@ _passport2.default.use(new LocalStrategy(_account2.default.authenticate()));
 _passport2.default.serializeUser(_account2.default.serializeUser());
 _passport2.default.deserializeUser(_account2.default.deserializeUser());
 
-app.listen(4000, function () {
-  console.log('App listening on port 4000');
+app.listen(3001, function () {
+  console.log('App listening on port 3001');
 });
 
 exports.default = app;

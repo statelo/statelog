@@ -64,7 +64,7 @@
     "redux-thunk": "^2.2.0",
     "shortid": "^2.2.6"
   },
-  "proxy": "http://localhost:4000",
+  "proxy": "http://localhost:3001",
   "scripts": {
     "start": "node scripts/start.js",
     "server": "babel-node server",

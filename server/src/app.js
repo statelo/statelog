@@ -39,8 +39,8 @@ passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-app.listen(4000, () => {
-  console.log('App listening on port 4000');
+app.listen(3001, () => {
+  console.log('App listening on port 3001');
 });
 
 export default app;
