@@ -8,12 +8,12 @@ class Header extends Component {
 
     this.state = {
       title: "STATELO`S BLOG",
-      menu1: "HOME",
-      menu2: "TUTORIALS",
-      menu3: "BLOGS",
-      about: "ABOUT ME",
-      signup: "SIGN UP",
-      login: "LOGIN"
+      menu1: "Home",
+      menu2: "Tutorials",
+      menu3: "Blogs",
+      about: "About Me",
+      signup: "Sign Up",
+      login: "Login"
     };
   }
 
