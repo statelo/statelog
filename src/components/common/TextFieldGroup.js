@@ -1,11 +1,13 @@
 import React from 'react';
 import classnames from 'classnames';
+import '../styles/TextFieldGroup.scss';
 
 const TextFieldGroup = ({ field, value, label, error, type, onChange }) => {
   return(
     <div className={classnames({ 'has-error': error })}>
       <label>{label}</label>
       <input
+        className="signup-input"
         type={type}
         name={field}
         value={value}
