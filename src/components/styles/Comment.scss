@@ -8,9 +8,9 @@
   margin-bottom: 100px;
 }
 
-input {
+.comment-input {
   width: 99.4%;
-  padding: 0 0 20px 0
+  font-size: 30px;
 }
 
 button {
@@ -34,39 +34,9 @@ button {
     margin: 25px 25px 0 25px;
   }
 
-  input {
+  .comment-input {
     width: 99%;
-    padding: 0 0 50px 0
-  }
-
-  button {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .comment {
-    margin: 25px 25px 0 25px;
-  }
-
-  input {
-    width: 99%;
-    padding: 0 0 50px 0
-  }
-
-  button {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 667px) {
-  .comment {
-    margin: 25px 25px 0 25px;
-  }
-
-  input {
-    width: 99%;
-    padding: 0 0 50px 0
+    font-size: 30px;
   }
 
   button {

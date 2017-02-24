@@ -39,6 +39,7 @@ class Comment extends React.Component {
       <div className="comment">
         <div className="form">
           <input
+            className="comment-input"
             onChange={this.handleChange}>
           </input>
           <button onClick={this.handleDeleteComment}>DELETE</button>
