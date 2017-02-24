@@ -28,11 +28,6 @@
     font-style: italic;
     background-color: rgba(0, 0, 0, 0.8);
 
-    span {
-      margin-right: 20px;
-      margin-top: 80px;
-    }
-
     form {
       margin: 20px;
     }
@@ -44,19 +39,8 @@
     button {
       margin-top: 10px;
       background-color: white;
-      align-items: center;
     }
   }
-}
-
-@-webkit-keyframes rightToLeftSignup {
-  from { right: -1250px; opacity: 0 }
-  to { right: 0; opacity: 1 }
-}
-
-@keyframes rightToLeftSignup {
-  from { right: -1250px; opacity: 0 }
-  to { right: 0; opacity: 1 }
 }
 
 @-webkit-keyframes zoom {
