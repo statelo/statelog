@@ -21,16 +21,13 @@
       font-weight: 300;
     }
 
-    .header-blank {
-      margin-right: 400px;
-    }
-
     .navlink-right {
       margin: 0 10px 0 10px;
       color: #9BDDBF;
       text-decoration: none;
       font-size: 17px;
       font-weight: 300;
+      float: right;
     }
   }
 
@@ -57,7 +54,7 @@
   @media only screen and (max-width: 375px) {
     nav {
       text-align: left;
-      padding: 15px 5px;
+      padding: 15px 15px;
 
       .navlink-left {
         display: inline-block;
@@ -88,7 +85,7 @@
       font-style: italic;
 
       .main {
-        width: 80%;
+        width: 87%;
         border: solid 10px;
         border-radius: 5px;
         display: inline-block;

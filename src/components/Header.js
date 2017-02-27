@@ -26,9 +26,8 @@ class Header extends Component {
             <Link to="/blogs" className="navlink-left">{ this.state.menu3 }</Link>
             <Link to="/tutorials" className="navlink-left">{ this.state.menu2 }</Link>
             <Link to="/about" className="navlink-left">{ this.state.about }</Link>
-            <span className="header-blank"></span>
-            <Link to="/login" className="navlink-right">{ this.state.login }</Link>
             <Link to="/signup" className="navlink-right">{ this.state.signup }</Link>
+            <Link to="/login" className="navlink-right">{ this.state.login }</Link>
           </nav>
           <h1><span className="main">{ this.state.title }</span></h1>
         </header>

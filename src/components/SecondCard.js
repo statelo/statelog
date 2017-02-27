@@ -7,7 +7,7 @@ class SecondCard extends React.Component {
     return (
       <div>
         <div className="second-card">
-          <h3 className="header">My Second Card</h3>
+          <h3 className="card-header">My Second Card</h3>
 
           <p>
             <span>
@@ -16,8 +16,8 @@ class SecondCard extends React.Component {
             </span>
           </p>
 
-          <p className="footer">10.02.2017</p>
-          <Link to="/second-card" className="more"><button className="second-card-button">Read More</button></Link>
+          <p className="card-footer">10.02.2017</p>
+          <Link to="/" className="more"><button className="second-card-button">Read More</button></Link>
         </div>
       </div>
     );

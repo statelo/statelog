@@ -7,7 +7,7 @@ class CardFirstDeployment extends React.Component {
     return (
       <div>
         <div className="card">
-          <h3 className="header">My First Deployment</h3>
+          <h3 className="card-header">My First Deployment</h3>
 
           <p>
             <span>
@@ -16,7 +16,7 @@ class CardFirstDeployment extends React.Component {
             </span>
           </p>
 
-          <p className="footer">05.01.2017</p>
+          <p className="card-footer">05.01.2017</p>
           <Link to="#" className="more"><button className="card-button">Read More</button></Link>
         </div>
       </div>
