@@ -1,0 +1,33 @@
+.registration {
+  .registration-label {
+    display: block;
+  }
+
+  .registration-input {
+    width: 99%;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+    border-color: #9BDDBF;
+  }
+
+  @media only screen and (max-width: 375px) {
+    text-align: center;
+
+    .registration-input {
+      width: 90%;
+      font-size: 30px;
+      background-color: transparent;
+      color: white;
+      text-align: center;
+      border-color: #9BDDBF;
+    }
+  }
+}
+
+.registration-has-error {
+  color: red;
+  .registration-input {
+    border-color: red;
+  }
+}

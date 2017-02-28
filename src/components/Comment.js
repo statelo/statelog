@@ -42,8 +42,8 @@ class Comment extends React.Component {
             className="comment-input"
             onChange={this.handleChange}>
           </input>
-          <button onClick={this.handleDeleteComment}>Delete</button>
-          <button onClick={this.handlePostComment}>Post</button>
+          <button  className="comment-button" onClick={this.handleDeleteComment}>Delete</button>
+          <button className="comment-button" onClick={this.handlePostComment}>Post</button>
         </div>
         {this.props.comments.text.map((text, i) =>
           <Text key={i}>

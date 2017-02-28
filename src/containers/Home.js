@@ -8,8 +8,8 @@ class Home extends Component {
     return(
       <div>
         <FlashMessagesList />
-        {/* <h1 className="wishes">Leave some wishes</h1>
-        <Comment {...this.props} /> */}
+        <h1 className="wishes">Leave some wishes</h1>
+        <Comment {...this.props} />
       </div>
     );
   }

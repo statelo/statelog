@@ -3,6 +3,7 @@
     linear-gradient( rgba( 0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
     url('../../images/background-image.jpg');
   height: 100vh;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +46,6 @@
     .main {
       width: 46%;
       border: solid 10px;
-      border-radius: 5px;
       display: inline-block;
       letter-spacing: 1px;
     }
@@ -61,7 +61,7 @@
         margin: 0 5px 0 0;
         color: #9BDDBF;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 300;
       }
 
@@ -73,7 +73,7 @@
         margin: 0 0 0 5px;
         color: #9BDDBF;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 300;
       }
     }
@@ -82,12 +82,12 @@
       margin: 50px 0 0 0;
       text-align: center;
       font-size: 30px;
+      line-height: 50px;
       font-style: italic;
 
       .main {
         width: 87%;
         border: solid 10px;
-        border-radius: 5px;
         display: inline-block;
         letter-spacing: 1px;
       }

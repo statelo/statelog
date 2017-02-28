@@ -88,7 +88,12 @@ class RegistrationForm extends React.Component {
           />
 
           <div>
-            <button disabled={this.state.isLoading}>Sign Up</button>
+            <button
+              disabled={this.state.isLoading}
+              className="registration-button"
+            >
+              Sign Up
+            </button>
           </div>
         </form>
       </div>
