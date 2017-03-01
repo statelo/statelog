@@ -32,15 +32,26 @@
     }
 
     .comment-input {
+      width: 99.4%;
       font-size: 40px;
-      width: 100%;
       text-align: center;
     }
 
     .comment-button {
+      margin-top: 10px;
+      margin-left: 5px;
+      float: right;
+      position: relative;
       width: 80px;
       height: 40px;
+      border: 2px solid #0F1626;
+      background-color: #0F1626;
+      color: #9BDDBF;
       font-size: 15px;
+      font-family: 'Open Sans', sans-serif;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
