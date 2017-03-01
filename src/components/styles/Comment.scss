@@ -1,8 +1,6 @@
 .comment {
-  margin: 50px 500px 0 500px;
-
   .form {
-    margin-bottom: 100px;
+    margin: 50px 500px 100px 500px;
   }
 
   .comment-input {
@@ -29,7 +27,9 @@
   }
 
   @media only screen and (max-width: 375px) {
-    margin: 50px 20px 0 20px;
+    .form {
+      margin: 50px 25px 100px 25px;
+    }
 
     .comment-input {
       width: 100%;
