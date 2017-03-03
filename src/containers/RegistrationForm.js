@@ -94,6 +94,11 @@ class RegistrationForm extends React.Component {
             >
               Sign Up
             </button>
+            <button
+              className="login-button"
+            >
+              Login
+            </button>
           </div>
         </form>
       </div>

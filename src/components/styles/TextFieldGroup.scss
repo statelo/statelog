@@ -1,26 +1,37 @@
 .registration {
+  margin-left: 35px;
+
   .registration-label {
     display: block;
   }
 
   .registration-input {
-    width: 99%;
+    color: #9BDDBF;
+    width: 90%;
     font-size: 30px;
     background-color: transparent;
     color: white;
-    border-color: #9BDDBF;
+    border-style: none;
+    border-bottom: 2px solid #9BDDBF;
+    margin-bottom: 20px;
+    font-style: italic;
+    &:focus {
+      outline: none;
+    }
   }
 
   @media only screen and (max-width: 375px) {
-    text-align: center;
-
     .registration-input {
       width: 90%;
       font-size: 30px;
       background-color: transparent;
       color: white;
-      text-align: center;
-      border-color: #9BDDBF;
+      border-style: none;
+      border-bottom: 2px solid #9BDDBF;
+      margin-bottom: 30px;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
