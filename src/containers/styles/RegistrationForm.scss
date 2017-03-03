@@ -34,44 +34,47 @@
     text-align: center;
   }
 
-  .registration-button {
-    margin-top: 10px;
-    margin-left: 65px;
-    position: relative;
-    width: 110px;
-    height: 50px;
-    border: 2px solid #9BDDBF;
-    background-color: transparent;
-    color: #9BDDBF;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    &:disabled{
-      cursor: not-allowed;
-      background-color: gray;
-      color: black;
-    }
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-  }
+  .button-group {
+    text-align: center;
 
-  .login-button {
-    margin-top: 10px;
-    margin-left: 30px;
-    position: relative;
-    width: 110px;
-    height: 50px;
-    border: 2px solid #9BDDBF;
-    background-color: transparent;
-    color: #9BDDBF;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    &:hover {
-      background-color: white;
-      color: black;
+    .registration-button {
+      margin-top: 10px;
+      margin-right: 5px;
+      position: relative;
+      width: 100px;
+      height: 50px;
+      border: 2px solid #9BDDBF;
+      background-color: transparent;
+      color: #9BDDBF;
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-style: italic;
+      &:disabled{
+        cursor: not-allowed;
+        background-color: gray;
+        color: black;
+      }
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    .login-button {
+      margin-top: 10px;
+      position: relative;
+      width: 100px;
+      height: 50px;
+      border: 2px solid #9BDDBF;
+      background-color: transparent;
+      color: #9BDDBF;
+      font-size: 20px;
+      font-family: 'Open Sans', sans-serif;
+      font-style: italic;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
     }
   }
 
@@ -107,25 +110,6 @@
         position: absolute;
         right: 30px;
         top: 20px;
-    }
-
-    .registration-button {
-      margin-top: 10px;
-      margin-left: 65px;
-      font-style: italic;
-      position: relative;
-      width: 110px;
-      height: 50px;
-      border: 2px solid #9BDDBF;
-      background-color: transparent;
-      color: #9BDDBF;
-      font-size: 20px;
-      font-family: 'Open Sans', sans-serif;
-      &:disabled{
-        cursor: not-allowed;
-        background-color: gray;
-        color: black;
-      }
     }
   }
 }

@@ -87,7 +87,7 @@ class RegistrationForm extends React.Component {
             field="password"
           />
 
-          <div>
+          <div className="button-group">
             <button
               disabled={this.state.isLoading}
               className="registration-button"
