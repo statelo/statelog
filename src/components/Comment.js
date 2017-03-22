@@ -37,8 +37,8 @@ class Comment extends React.Component {
   render() {
     return(
       <div>
-        <h1 className="wishes">Leave some wishes</h1>
         <div className="comment">
+          <h1 className="wishes">Leave some wishes</h1>
           <div className="form">
             <input
               className="comment-input"
