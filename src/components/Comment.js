@@ -36,19 +36,22 @@ class Comment extends React.Component {
 
   render() {
     return(
-      <div className="comment">
-        <div className="form">
-          <input
-            className="comment-input"
-            onChange={this.handleChange}/>
-          <button  className="comment-button" onClick={this.handleDeleteComment}>Delete</button>
-          <button className="comment-button" onClick={this.handlePostComment}>Post</button>
+      <div>
+        <h1 className="wishes">Leave some wishes</h1>
+        <div className="comment">
+          <div className="form">
+            <input
+              className="comment-input"
+              onChange={this.handleChange}/>
+            <button  className="comment-button" onClick={this.handleDeleteComment}>Delete</button>
+            <button className="comment-button" onClick={this.handlePostComment}>Post</button>
+          </div>
+          {this.props.comments.text.map((text, i) =>
+            <Text key={i}>
+              {text.text}
+            </Text>
+          )}
         </div>
-        {this.props.comments.text.map((text, i) =>
-          <Text key={i}>
-            {text.text}
-          </Text>
-        )}
       </div>
     );
   }

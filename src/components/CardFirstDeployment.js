@@ -17,7 +17,7 @@ class CardFirstDeployment extends React.Component {
           </p>
 
           <p className="card-footer">05.01.2017</p>
-          <Link to="#" className="more"><button className="card-button">Read More</button></Link>
+          <Link to="/my-first-deployment" className="more"><button className="card-button">Read More</button></Link>
         </div>
       </div>
     );
