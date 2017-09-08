@@ -3,7 +3,17 @@ import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 
 import './index.css';
-import { App, Home, About, Tutorials, Blogs, RegistrationPage, LoginPage, CardFirstDeploymentContent } from './containers/index';
+import { 
+  App,
+  Home, 
+  About, 
+  Tutorials, 
+  Blogs,
+} from './containers/index';
+import {
+  SecondCardContent,
+  CardFirstDeploymentContent
+} from './components/index';
 
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
@@ -29,10 +39,9 @@ ReactDOM.render(
         <Route path="/blogs" component={ Blogs } />
         <Route path="/tutorials" component={ Tutorials } />
         <Route path="/about" component={ About } />
-        <Route path="/signup" component={ RegistrationPage } />
-        <Route path="/login" component={ LoginPage } />
       </Route>
       <Route path="/my-first-deployment" component={ CardFirstDeploymentContent }/>
+      <Route path="/my-second-post" component={ SecondCardContent }/>
     </Router>
   </Provider>,
   document.getElementById('root')

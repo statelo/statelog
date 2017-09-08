@@ -19,6 +19,14 @@
   height: 50px;
   border: 1px solid #3fb0ac;
   font-size: 13px;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #3fb0ac;
+    color: #312c32;
+    border: 1px solid #312c32;
+  }
 }
 
 .card-header {

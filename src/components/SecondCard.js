@@ -17,7 +17,7 @@ class SecondCard extends React.Component {
           </p>
 
           <p className="card-footer">10.02.2017</p>
-          <Link to="/" className="more"><button className="second-card-button">Read More</button></Link>
+          <Link to="/my-second-post" className="more"><button className="second-card-button">Read More</button></Link>
         </div>
       </div>
     );

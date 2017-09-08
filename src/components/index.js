@@ -1,8 +1,7 @@
 import Header from './Header';
 import CardFirstDeployment from './CardFirstDeployment';
+import CardFirstDeploymentContent from './CardFirstDeploymentContent';
 import SecondCard from './SecondCard';
-import Comment from './Comment';
-import Text from './Text';
-import FlashMessagesList from './flash/FlashMessagesList';
+import SecondCardContent from './SecondCardContent';
 
-export { Header, CardFirstDeployment, Comment, Text, SecondCard, FlashMessagesList };
+export { Header, CardFirstDeployment, SecondCard, SecondCardContent, CardFirstDeploymentContent };
